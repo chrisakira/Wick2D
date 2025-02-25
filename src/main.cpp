@@ -16,7 +16,7 @@
 #include <raudio.h>
 #include "platformInput.h"
 #include "otherPlatformFunctions.h"
-#include "gameLayer.h"
+#include "base.h" 
 #include <fstream>
 #include <chrono>
 #include "errorReporting.h"
@@ -401,7 +401,7 @@ int main()
 #pragma endregion
 
 #pragma region initGame
-	if (!initGame())
+	if (!init_game())
 	{
 		return 0;
 	}
@@ -443,9 +443,9 @@ int main()
 
 	#pragma region game logic
 
-		if (!gameLogic(augmentedDeltaTime))
+		if (!game_logic(augmentedDeltaTime))
 		{
-			closeGame();
+			close_game();
 			return 0;
 		}
 
@@ -532,7 +532,7 @@ int main()
 
 	}
 
-	closeGame();
+	close_game();
 
 	//if you want the console to stay after closing the window
 	//std::cin.clear();

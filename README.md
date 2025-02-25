@@ -2,6 +2,12 @@
 
 ---
 
+# Pop OS Linux lib requirements
+bash´´´ 
+sudo apt update
+sudo apt install libx11-dev libxrandr-dev libxinerama-dev libxcursor-dev libxi-dev libgl1-mesa-dev xorg-dev
+´´´
+
 ## What is it?
 
 This is a CMake setup that loads glfw, OpenGL, stb_image, stb_truetype, and a custom 2d library. It works both on Windows and Linux.

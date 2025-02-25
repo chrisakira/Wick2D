@@ -1,9 +1,9 @@
 #pragma once
 #include <glm/vec2.hpp>
 
-bool initGame();
-bool gameLogic(float deltaTime);
-void closeGame();
+bool init_game();
+bool game_logic(float deltaTime);
+void close_game();
 
 namespace platform
 {

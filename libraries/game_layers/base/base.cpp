@@ -1,5 +1,5 @@
 #define GLM_ENABLE_EXPERIMENTAL
-#include "gameLayer.h"
+#include "base.h"
 #include <glad/glad.h>
 #include <glm/glm.hpp>
 #include <glm/gtx/transform.hpp>
@@ -10,7 +10,7 @@
 #include "imfilebrowser.h"
 #include <gl2d/gl2d.h>
 #include <platformTools.h>
-
+ 
 struct GameData
 {
 	glm::vec2 rectPos = {100,100};
@@ -19,7 +19,7 @@ struct GameData
 
 gl2d::Renderer2D renderer;
 
-bool initGame()
+bool init_game()
 {
 	//initializing stuff for the renderer
 	gl2d::init();
@@ -31,16 +31,10 @@ bool initGame()
 	return true;
 }
 
-
-//IMPORTANT NOTICE, IF YOU WANT TO SHIP THE GAME TO ANOTHER PC READ THE README.MD IN THE GITHUB
-//https://github.com/meemknight/cmakeSetup
-//OR THE INSTRUCTION IN THE CMAKE FILE.
-//YOU HAVE TO CHANGE A FLAG IN THE CMAKE SO THAT RESOURCES_PATH POINTS TO RELATIVE PATHS
-//BECAUSE OF SOME CMAKE PROGBLMS, RESOURCES_PATH IS SET TO BE ABSOLUTE DURING PRODUCTION FOR MAKING IT EASIER.
-
-bool gameLogic(float deltaTime)
+//This function is called every frame
+bool game_logic(float deltaTime)
 {
-#pragma region init stuff
+#pragma region init_stuff
 	int w = 0; int h = 0;
 	w = platform::getFrameBufferSizeX(); //window w
 	h = platform::getFrameBufferSizeY(); //window h
@@ -88,7 +82,7 @@ bool gameLogic(float deltaTime)
 }
 
 //This function might not be be called if the program is forced closed
-void closeGame()
+void close_game()
 {
 
 	//saved the data.
