@@ -1,0 +1,124 @@
+<mxfile host="65bd71144e">
+    <diagram id="Ba37yOd1DcigyHlVN3rC" name="Page-1">
+        <mxGraphModel dx="1386" dy="723" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="2" value="" style="rounded=1;whiteSpace=wrap;html=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" vertex="1" parent="1">
+                    <mxGeometry x="40" y="30" width="205" height="130" as="geometry"/>
+                </mxCell>
+                <mxCell id="3" value="Name" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=19;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" vertex="1" parent="1">
+                    <mxGeometry x="40" y="30" width="200" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="5" value="Fragmented Mind" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" vertex="1" parent="1">
+                    <mxGeometry x="53.75" y="60" width="187.5" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="6" value="Babel" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" vertex="1" parent="1">
+                    <mxGeometry x="53.75" y="90" width="187.5" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="7" value="Tower of Babel" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" vertex="1" parent="1">
+                    <mxGeometry x="53.75" y="120" width="187.5" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="8" value="" style="rounded=1;whiteSpace=wrap;html=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" vertex="1" parent="1">
+                    <mxGeometry x="300" y="30" width="205" height="160" as="geometry"/>
+                </mxCell>
+                <mxCell id="9" value="Theme" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=19;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" vertex="1" parent="1">
+                    <mxGeometry x="300" y="30" width="200" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="10" value="Dark Souls" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" vertex="1" parent="1">
+                    <mxGeometry x="313.75" y="60" width="187.5" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="11" value="Level Based Dungeon" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" vertex="1" parent="1">
+                    <mxGeometry x="313.75" y="90" width="187.5" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="12" value="Inverted Tower" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" vertex="1" parent="1">
+                    <mxGeometry x="313.75" y="120" width="187.5" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="13" value="Deep Lore" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" vertex="1" parent="1">
+                    <mxGeometry x="308.75" y="150" width="187.5" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="14" value="" style="rounded=1;whiteSpace=wrap;html=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" vertex="1" parent="1">
+                    <mxGeometry x="560" y="25" width="205" height="135" as="geometry"/>
+                </mxCell>
+                <mxCell id="15" value="Style" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=19;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" vertex="1" parent="1">
+                    <mxGeometry x="560" y="25" width="200" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="16" value="2D Plataform" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" vertex="1" parent="1">
+                    <mxGeometry x="573.75" y="55" width="187.5" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="17" value="Combo Based" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" vertex="1" parent="1">
+                    <mxGeometry x="573.75" y="85" width="187.5" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="18" value="Centered around 9 Powers" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" vertex="1" parent="1">
+                    <mxGeometry x="573.75" y="115" width="187.5" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="20" value="" style="rounded=1;whiteSpace=wrap;html=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" vertex="1" parent="1">
+                    <mxGeometry x="40" y="240" width="205" height="160" as="geometry"/>
+                </mxCell>
+                <mxCell id="21" value="9 Powers" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=19;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" vertex="1" parent="1">
+                    <mxGeometry x="40" y="240" width="200" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="22" value="3 Emotions" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" vertex="1" parent="1">
+                    <mxGeometry x="53.75" y="270" width="187.5" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="23" value="3 Sins" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" vertex="1" parent="1">
+                    <mxGeometry x="53.75" y="300" width="187.5" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="24" value="&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;3 Virtues&lt;/span&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" vertex="1" parent="1">
+                    <mxGeometry x="53.75" y="330" width="187.5" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="25" value="Power affect world state and ending" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;fontSize=11;" vertex="1" parent="1">
+                    <mxGeometry x="52.5" y="360" width="187.5" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="32" value="" style="rounded=1;whiteSpace=wrap;html=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" vertex="1" parent="1">
+                    <mxGeometry x="37.5" y="440" width="205" height="160" as="geometry"/>
+                </mxCell>
+                <mxCell id="33" value="3 Emotions" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=19;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" vertex="1" parent="1">
+                    <mxGeometry x="37.5" y="440" width="200" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="34" value="Base initial Powers" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" vertex="1" parent="1">
+                    <mxGeometry x="51.25" y="470" width="187.5" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="35" value="Anger" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" vertex="1" parent="1">
+                    <mxGeometry x="51.25" y="500" width="187.5" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="36" value="Fear" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" vertex="1" parent="1">
+                    <mxGeometry x="51.25" y="530" width="187.5" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="37" value="Happiness" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" vertex="1" parent="1">
+                    <mxGeometry x="46.25" y="560" width="187.5" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="44" value="" style="rounded=1;whiteSpace=wrap;html=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" vertex="1" parent="1">
+                    <mxGeometry x="37.5" y="630" width="205" height="130" as="geometry"/>
+                </mxCell>
+                <mxCell id="45" value="3 Sins" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=19;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" vertex="1" parent="1">
+                    <mxGeometry x="37.5" y="630" width="200" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="46" value="Gluttony" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" vertex="1" parent="1">
+                    <mxGeometry x="51.25" y="660" width="187.5" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="47" value="Pride" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" vertex="1" parent="1">
+                    <mxGeometry x="51.25" y="690" width="187.5" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="48" value="Greed" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" vertex="1" parent="1">
+                    <mxGeometry x="51.25" y="720" width="187.5" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="50" value="" style="rounded=1;whiteSpace=wrap;html=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" vertex="1" parent="1">
+                    <mxGeometry x="37.5" y="790" width="205" height="130" as="geometry"/>
+                </mxCell>
+                <mxCell id="51" value="3 Virtues" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=19;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" vertex="1" parent="1">
+                    <mxGeometry x="37.5" y="790" width="200" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="52" value="Patience" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" vertex="1" parent="1">
+                    <mxGeometry x="51.25" y="820" width="187.5" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="53" value="Courage" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" vertex="1" parent="1">
+                    <mxGeometry x="51.25" y="850" width="187.5" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="54" value="Justice" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" vertex="1" parent="1">
+                    <mxGeometry x="51.25" y="880" width="187.5" height="30" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
