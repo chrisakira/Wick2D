@@ -4,7 +4,7 @@
 //  add enet in the target_link_libraries list at the end
 //#include <enet/enet.h>
 
-
+#include "main.h"
 #include <glad/glad.h>
 #include <GLFW/glfw3.h>
 #include <stb_image/stb_image.h>
@@ -16,10 +16,11 @@
 #include <raudio.h>
 #include "platformInput.h"
 #include "otherPlatformFunctions.h"
-#include "base.h" 
 #include <fstream>
 #include <chrono>
 #include "errorReporting.h"
+
+#include "Base.h" 
 
 #define REMOVE_IMGUI 0
 

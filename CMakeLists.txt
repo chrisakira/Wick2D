@@ -5,6 +5,11 @@ cmake_minimum_required(VERSION 3.16)
 
 set(CMAKE_CXX_STANDARD 20)
  
+if (POLICY CMP0141)
+  cmake_policy(SET CMP0141 NEW)
+  set(CMAKE_MSVC_DEBUG_INFORMATION_FORMAT "$<IF:$<AND:$<C_COMPILER_ID:MSVC>,$<CXX_COMPILER_ID:MSVC>>,$<$<CONFIG:Debug,RelWithDebInfo>:EditAndContinue>,$<$<CONFIG:Debug,RelWithDebInfo>:ProgramDatabase>>")
+endif()
+
 #set this to true to ship the game! 
 option(PRODUCTION_BUILD "Make this a production build" OFF) 
 
@@ -27,9 +32,11 @@ set(GLFW_INSTALL OFF CACHE BOOL "" FORCE)
 set(BUILD_SHARED_LIBS OFF CACHE BOOL "" FORCE)
 
 
+include(${CMAKE_SOURCE_DIR}/config.cmake)
 include(${CMAKE_SOURCE_DIR}/include/include.cmake)
-include(${CMAKE_SOURCE_DIR}/libraries/game_layers/game_layer.cmake)
 include(${CMAKE_SOURCE_DIR}/libraries/ui/ui.cmake) 
+include(${CMAKE_SOURCE_DIR}/libraries/Entities/Entities.cmake)
+include(${CMAKE_SOURCE_DIR}/libraries/Game_Layers/Game_Layers.cmake)
 
 add_subdirectory(thirdparty/glfw-3.3.2)			#window oppener
 add_subdirectory(thirdparty/glad)				#opengl loader
@@ -48,19 +55,28 @@ add_subdirectory(thirdparty/glui)				#ui library, usefull for making game menus
 
 # MY_SOURCES is defined to be a list of all the source files for my game 
 # DON'T ADD THE SOURCES BY HAND, they are already added with this macro
-file(GLOB_RECURSE MY_SOURCES CONFIGURE_DEPENDS "${CMAKE_CURRENT_SOURCE_DIR}/src/*.cpp")
+
+file(GLOB_RECURSE MY_HEADERS CONFIGURE_DEPENDS  "${CMAKE_CURRENT_SOURCE_DIR}/src/*.h"  
+												${GAME_LAYER_HEADERS}
+												${UI_HEADERS}
+												${ENTITY_HEADERS}
+												${INCLUDE_HEADERS}
+												)
+
+file(GLOB_RECURSE MY_SOURCES CONFIGURE_DEPENDS "${CMAKE_CURRENT_SOURCE_DIR}/src/*.cpp" 
+												${GAME_LAYER_SOURCES}
+												${UI_SOURCES}
+												${ENTITY_SOURCES} 
+												${INCLUDE_SOURCES}
+												)
 
 
-add_executable("${CMAKE_PROJECT_NAME}" 	${INCLUDE_SOURCES}
-										${GAME_LAYER_SOURCES}
-										${GAME_LAYER_HEADERS} 
-										${UI_SOURCES})
 
-set_property(TARGET "${CMAKE_PROJECT_NAME}" PROPERTY CXX_STANDARD 17)
+add_executable("${CMAKE_PROJECT_NAME}")
 
+set_property(TARGET "${CMAKE_PROJECT_NAME}" PROPERTY CXX_STANDARD 20)
 
 target_compile_definitions("${CMAKE_PROJECT_NAME}" PUBLIC GLFW_INCLUDE_NONE=1) 
-target_include_directories("${CMAKE_PROJECT_NAME}" PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/libraries/game_layers/base)
 if(PRODUCTION_BUILD)
 	# setup the ASSETS_PATH macro to be in the root folder of your exe
 	target_compile_definitions("${CMAKE_PROJECT_NAME}" PUBLIC RESOURCES_PATH="./resources/") 
@@ -75,7 +91,7 @@ else()
 
 endif()
 
-target_sources("${CMAKE_PROJECT_NAME}" PRIVATE ${MY_SOURCES} )
+target_sources("${CMAKE_PROJECT_NAME}" PRIVATE ${MY_SOURCES} ${MY_HEADERS})
 
 
 if(MSVC) # If using the VS compiler...
@@ -89,9 +105,12 @@ if(MSVC) # If using the VS compiler...
 
 endif()
 
-target_include_directories("${CMAKE_PROJECT_NAME}" PUBLIC "${CMAKE_CURRENT_SOURCE_DIR}/include/")
-target_include_directories("${CMAKE_PROJECT_NAME}" PUBLIC "${CMAKE_CURRENT_SOURCE_DIR}/include/gameLayer/")
-target_include_directories("${CMAKE_PROJECT_NAME}" PUBLIC "${CMAKE_CURRENT_SOURCE_DIR}/include/platform/")
+target_include_directories("${CMAKE_PROJECT_NAME}" PUBLIC "${CMAKE_CURRENT_SOURCE_DIR}/include")
+target_include_directories("${CMAKE_PROJECT_NAME}" PUBLIC "${CMAKE_CURRENT_SOURCE_DIR}/libraries/Entities/Base_Entity") 
+target_include_directories("${CMAKE_PROJECT_NAME}" PUBLIC "${CMAKE_CURRENT_SOURCE_DIR}/libraries/Entities/Main_Entity") 
+target_include_directories("${CMAKE_PROJECT_NAME}" PUBLIC "${CMAKE_CURRENT_SOURCE_DIR}/libraries/Entities/Square_Entity") 
+target_include_directories("${CMAKE_PROJECT_NAME}" PUBLIC "${CMAKE_CURRENT_SOURCE_DIR}/libraries/Game_Layers/Base") 
+target_include_directories("${CMAKE_PROJECT_NAME}" PUBLIC "${CMAKE_CURRENT_SOURCE_DIR}/libraries/ui/platform")  
 
 
 #target_link_libraries("${CMAKE_PROJECT_NAME}" PRIVATE glm glfw 

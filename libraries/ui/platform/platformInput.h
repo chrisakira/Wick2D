@@ -1,6 +1,6 @@
 #pragma once
 #include <GLFW/glfw3.h>
-#include "base.h"
+#include "Base.h"
 #include <string>
 
 namespace platform

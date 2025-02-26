@@ -1,9 +1,18 @@
-# cmake responsible for agregating every entity class into one cmake file
-# entities.cmake
+# cmake responsible for agregating auxiliar functions and data structures to be used into one cmake file
+ 
+set(INCLUDE_SOURCES      
+    ${CMAKE_SOURCE_DIR}/include/structs.cpp 
+    ${CMAKE_SOURCE_DIR}/include/vector_math.cpp 
+    ${CMAKE_SOURCE_DIR}/include/extra_functions.cpp
+)
 
-# Adiciona os arquivos de entidade
-#set(INCLUDE_SOURCES
-#)
+set(INCLUDE_HEADERS    
+    ${CMAKE_SOURCE_DIR}/include/structs.h  
+    ${CMAKE_SOURCE_DIR}/include/vector_math.h  
+    ${CMAKE_SOURCE_DIR}/include/extra_functions.h 
+)
 
-# Exp�e a vari�vel para o projeto principal
-set(INCLUDE_SOURCES ${INCLUDE_SOURCES})
+include_directories(${CMAKE_SOURCE_DIR}/include)
+
+set(INCLUDE_SOURCES ${INCLUDE_SOURCES} PARENT_SCOPE)
+set(INCLUDE_HEADERS ${INCLUDE_HEADERS} PARENT_SCOPE)
